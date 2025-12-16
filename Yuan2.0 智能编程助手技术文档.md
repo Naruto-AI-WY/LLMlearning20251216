@@ -151,6 +151,7 @@ pip install torch streamlit modelscope sentencepiece einops accelerate
 ```
 
 ### 5.2 关键版本锁定 (Troubleshooting)
+
 **注意**：由于 Yuan2.0 模型代码与新版 Transformers 存在兼容性问题（主要涉及 KV Cache 和 Protobuf 解析），**必须**锁定以下版本：
 
 1.  **降级 Transformers** (解决 `AttributeError: NoneType...shape`):
@@ -164,6 +165,7 @@ pip install torch streamlit modelscope sentencepiece einops accelerate
     ```
 
 ### 5.3 启动服务
+
 在终端执行以下命令：
 
 ```bash
@@ -171,3 +173,7 @@ streamlit run web_demo_2b.py
 ```
 
 启动成功后，控制台将输出访问地址（通常为 `http://localhost:8501`），在浏览器中打开即可开始使用。
+
+## 6. Demo展示
+
+![image-20251216213152760](./Yuan2.0%20%E6%99%BA%E8%83%BD%E7%BC%96%E7%A8%8B%E5%8A%A9%E6%89%8B%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3.assets/image-20251216213152760.png)
